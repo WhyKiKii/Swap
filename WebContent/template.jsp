@@ -93,7 +93,7 @@
  
  <div id="add_missingnum" style="display:none;">
 	<label>결번 번호</label> <input type="button" value="삭제" onclick="remove_missing_number(this)">
-	<input type="number" min="1" max="35" name="missingnum" required="required">
+	<input type="number"  min="1" max="40" name="missingnum" required="required">
 </div>
  	
  <script>
