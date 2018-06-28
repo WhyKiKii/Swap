@@ -81,7 +81,7 @@
 <body>
  <h1><span>자리 배치 프로그램</span></h1>
  <div class = "swap">
-	 <form action="swap.jsp">
+	 <form action="same_swap.jsp">
 	 	<label>인원 수</label> <input type = "number" name = "personnel" min="20" max="40" required="required"> <br>
 	 	<label>분단 수</label> <input type = "number" name = "division" min="2" max="4" required="required"> <br>
 		<label>결번</label> <input type="button" value="추가" onclick="add_missing_number()"> <br>

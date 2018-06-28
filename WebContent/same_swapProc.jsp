@@ -114,11 +114,26 @@
 		font-size: 22px;
 		margin-bottom:10px;
 	}
+	
+	input[type=button]:hover  {
+		background-color: transparent;
+		color:darkgreen;
+	}
+	
+	input[type=button]{
+		margin-top:20px;
+		width:145px;
+		height:35px;
+		font-size: 15px;
+		border:2px solid darkgreen;
+		background-color:darkgreen;
+		color:white;
+	}
 </style>
 </head>
 <body>
 <h1><span>자리 배치 결과</span></h1>
-	<div class = "whole">
+	<div class = "whole">	
 		<% for(int i = 0; i < division; i++) {
 			switch(i) {
 				case 0 : index = 0; break;
@@ -140,5 +155,9 @@
 			</div>
 		<% } %>
 	</div>
+	<form>
+		<input type="button" value="다시 바꾸기" onClick="window.location.reload()">
+		<input type="button" value="홈으로" onClick="location='index.jsp'">
+	</form>
 </body>
 </html>
