@@ -18,7 +18,9 @@
 	int personnel = Integer.parseInt(p); // 인원 수
 	int division = Integer.parseInt(d); // 분단 수
 	int s = personnel / division / 2; // 분단의 줄 수
-	if((personnel % division)!=0) {
+	int eee = (personnel / division) % 2;
+	int fff = personnel % (division / 2);
+	if(eee!=0 || fff != 0) {
 		s += 1;
 	}
 	int index = 0; // 인원 수 대로 모두 출력하기 위한 인덱스 넘버
